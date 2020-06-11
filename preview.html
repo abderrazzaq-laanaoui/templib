@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/preview.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>templib | preview</title>
+</head>
+
+<body>
+
+    <div class="header" style="height:100px;width:100vw;background-color:black">
+        <div class="devices">
+            <button onclick="resize('Desktop');">Desktop</button>
+            <button onclick="resize('Tablet');">Tablet</button>
+            <button onclick="resize('Mobile');">Mobile</button>
+        </div>
+
+    </div>
+    <dav class="cadre">
+
+        <iframe class="Desktop" src="" frameborder="0"></iframe></dav>
+    <script>
+        document.querySelector('iframe').setAttribute('src', localStorage.getItem("preview"));
+
+        function resize(device) {
+            if (device == 'Desktop') {
+                document.querySelector('iframe').setAttribute('class', 'Desktop');
+            } else if (device == 'Tablet') {
+                document.querySelector('iframe').setAttribute('class', 'Tablet');
+            } else if (device == 'Mobile') {
+                document.querySelector('iframe').setAttribute('class', 'Mobile');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
