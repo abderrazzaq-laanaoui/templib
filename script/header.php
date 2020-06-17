@@ -1,5 +1,4 @@
 <?php 
-
       if(!isset($_SESSION)) 
       { 
           session_start(); 
@@ -11,9 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font: Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700,900" rel="stylesheet">
-    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
@@ -23,10 +20,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <!-- navbar-fixed fixed-top-->
+
             <a class="navbar-brand h1" href="index.php">
                 <img id="logo" src="images/logo.png" width="100px" alt="logo">
-                <!-- <span id="brand">templib</span> -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

@@ -5,6 +5,21 @@ body::-webkit-scrollbar {
 * {
     margin: 0 !important;
     box-sizing: border-box;
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    background-color: black
+}
+
+#templibLogo {
+    height: 75px;
+    float: left;
 }
 
 .cadre {
@@ -14,17 +29,17 @@ body::-webkit-scrollbar {
 
 .Desktop {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 9vh);
 }
 
 .Tablet {
     width: 768px;
-    height: 1024px;
+    height: calc(100vh - 9vh);
 }
 
 .Mobile {
     width: 414px;
-    height: 736px;
+    height: calc(100vh - 9vh);
 }
 
 .Mobile,
@@ -39,8 +54,74 @@ body::-webkit-scrollbar {
     transition: 1s ease-out
 }
 
+div.devices {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.devices button {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px !important;
+}
+
+div.devices button:hover {
+    background-color: RoyalBlue;
+}
+
+button#downBtn {
+    position: relative;
+    color: white;
+    background-color: #000000;
+    border: 3px solid #ffffff;
+    width: 100px;
+    height: 45px;
+    overflow: hidden;
+}
+
+button#downBtn:hover img#downloadImg {
+    opacity: 1;
+    transition: 1.3s;
+}
+
+button#downBtn:hover span#download {
+    opacity: 0;
+    /* transition: 3s; */
+}
+
+button img#downloadImg {
+    position: absolute;
+    left: 32px;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    /* transition: 3s; */
+}
+
+button span#download {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    transition: opacity 1.3s;
+}
+
 @media (max-width: 992px) {
-    .devices {
+    button#desktop,
+    button#tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    button#mobile {
         visibility: hidden;
     }
 }

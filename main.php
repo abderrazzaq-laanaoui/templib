@@ -6,7 +6,7 @@
    $cat = 0;
    $ac_free = 'active';
    $ac_pro = '';
-   $ac_home="";
+   $ac_home='';
    if (isset($_GET["type"])) {
        if($_GET["type"]=='pro')
        {
@@ -21,13 +21,12 @@
                 $ac_free = '';
                 $ac_pro = 'active'; 
            }
-          
        }
    }
 require_once "script/header.php";
 ?>
     <div id="cont" class="container-fluid d-flex justify-content-center flex-wrap dark">
-    <!-- START -->
+
     <?php 
     require "script/db.php";
     $sql= "SELECT * FROM `template` WHERE catégorie=$cat ";
@@ -46,7 +45,7 @@ require_once "script/header.php";
                             <p>$row[description]</p>          
                             <div class='btns'>
                                 <a onclick='prvData(`$row[preview]`,`$row[download]`)' class='btn btn-dark darkbtn' href='./preview.html' target='_blank'> Preview </a>
-                                <a class='btn btn-light whitebtn' href='$row[download]'>Download</a>
+                                <a download class='btn btn-light whitebtn' href='$row[download]'>Download</a>
                             </div>
                 </div>
             </div>";
@@ -77,16 +76,9 @@ require_once "script/header.php";
             </div>
         </div>
     </footer>
-    <script>
-        function prvData(prv,down){
-            localStorage.setItem("preview",prv);
-            localStorage.setItem("download ",down);
-        }
-    </script>
+    <script src="script/setData.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-
 </html>
-<!--  -->

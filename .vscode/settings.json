@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.port": "8090"
+    "liveServer.settings.port": 5050,
+    // "liveServer.settings.userWebExt":true,
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "http://loclhost:80/templib/main.php"
+    }
 }

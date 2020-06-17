@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.container.log {
+    zoom: 85%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;

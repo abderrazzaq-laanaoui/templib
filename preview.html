@@ -2,41 +2,35 @@
 <html lang="en">
 
 <head>
-
+    <script>
+        if (typeof(localStorage.getItem("preview") == undefined))
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/preview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>templib | preview</title>
 </head>
 
 <body>
+    <header>
+        <a class="navbar-brand h1" href="index.php">
+            <img id="templibLogo" src="images/logo.png" alt="logo">
 
-    <div class="header" style="height:100px;width:100vw;background-color:black">
-        <div class="devices">
-            <button onclick="resize('Desktop');">Desktop</button>
-            <button onclick="resize('Tablet');">Tablet</button>
-            <button onclick="resize('Mobile');">Mobile</button>
+        </a>
+        <div class="devices ">
+            <button id="desktop" onclick="resize( 'Desktop'); ">Desktop</button>
+            <button id="tablet" onclick="resize( 'Tablet'); ">Tablet</button>
+            <button id="mobile" onclick="resize( 'Mobile'); ">Mobile</button>
         </div>
-
-    </div>
-    <dav class="cadre">
-
-        <iframe class="Desktop" src="" frameborder="0"></iframe></dav>
-    <script>
-        document.querySelector('iframe').setAttribute('src', localStorage.getItem("preview"));
-
-        function resize(device) {
-            if (device == 'Desktop') {
-                document.querySelector('iframe').setAttribute('class', 'Desktop');
-            } else if (device == 'Tablet') {
-                document.querySelector('iframe').setAttribute('class', 'Tablet');
-            } else if (device == 'Mobile') {
-                document.querySelector('iframe').setAttribute('class', 'Mobile');
-            }
-        }
-    </script>
-
+        <a id="downlink" download href="#"><button id="downBtn"><img id="downloadImg" src="images/downloadImg.png" /><span id="download">Download</span></button></a>
+    </header>
+    <main class="cadre ">
+        <iframe class="Desktop " src="#" frameborder="0 "></iframe>
+    </main>
+    <script src="script/getData.js"></script>
+    <script src="script/resize.js "></script>
 </body>
 
 </html>

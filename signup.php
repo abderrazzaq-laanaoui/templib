@@ -2,7 +2,7 @@
 	<?php
 	require_once "./script/log.header.php"
 	?>
-	<div class="container">
+	<div class="container log">
 		<div class="login-content">
 			<form action="script/signup.inc.php" method="POST">
 				<img src="images/profile.svg">

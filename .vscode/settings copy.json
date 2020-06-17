@@ -5,6 +5,4 @@
         "baseUri": "/",
         "proxyUri": "http://loclhost:80/templib/main.php"
     }
-
-
 }
