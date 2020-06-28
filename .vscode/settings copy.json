@@ -1,8 +1,0 @@
-{
-    "liveServer.settings.userWebExt":true,
-    "liveServer.settings.proxy": {
-        "enable": true,
-        "baseUri": "/",
-        "proxyUri": "http://loclhost:80/templib/main.php"
-    }
-}
