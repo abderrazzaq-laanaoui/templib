@@ -1,11 +1,12 @@
 <?php
  	require_once "./script/log.header.php"
  ?>
-	
+
+
 	 <div class="container log">
 		<div class="login-content">
 			<form action="script/login.inc.php" method="POST">
-				<img src="images/profile.svg">
+				<img src="images/profile.png">
 				<h2 class="title">WELCOME</h2>
            		<div class="input-div user">
            		   <div class="i">

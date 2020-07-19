@@ -71,7 +71,7 @@ require_once "script/header.php";
                 </div>
 
                 <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-center">
-                    Laanoui ABDERRAZZAQ <br> Encadrent: bensliman<br> © 2020 All Rights Reserved
+                   <a target="_blank" href="https://github.com/abderrazzaq-laanoui/">LAANOUI Abderrazzaq</a><br> Encadrent: Mr. Mohamed Benslimane<br> © 2020 All Rights Reserved
                 </div>
             </div>
         </div>

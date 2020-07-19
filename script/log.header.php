@@ -15,6 +15,7 @@ if (session_status() == PHP_SESSION_NONE) {
 </head>
 <body>
     <header>
-        <nav><div class="brand"><h2>templib</h2></div>
+    <nav style="background-color: #4867e0; color=#ffffff">
+    <center><img src="images/logo.png" height="200px" weidth="150px"><h2></h2></center>
     </nav>
     </header>

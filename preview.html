@@ -3,7 +3,8 @@
 
 <head>
     <script>
-        if (typeof(localStorage.getItem("preview") == undefined))
+        if (typeof(localStorage.getItem("preview")) === "object")
+            window.location.replace("index.php");
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +28,7 @@
         <a id="downlink" download href="#"><button id="downBtn"><img id="downloadImg" src="images/downloadImg.png" /><span id="download">Download</span></button></a>
     </header>
     <main class="cadre ">
-        <iframe class="Desktop " src="#" frameborder="0 "></iframe>
+        <iframe class="Desktop" frameborder="0 "></iframe>
     </main>
     <script src="script/getData.js"></script>
     <script src="script/resize.js "></script>
